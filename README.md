@@ -8,12 +8,11 @@ docker push registry.heroku.com/hr-docuseal/web
 heroku container:release web
 ```
 
-- With heroku.yml(Recommended)
+- With heroku.yml (Recommended)
 ```
-docker pull docuseal/docuseal
-docker tag docuseal/docuseal registry.heroku.com/hr-docuseal/web
-docker push registry.heroku.com/hr-docuseal/web
-heroku container:release web
+# make changes to Dockerfile and git change
+git commit -m "NEW_MESSAGE"
+git push heroku master
 ```
 
 
