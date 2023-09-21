@@ -1,3 +1,22 @@
+# Deployment
+
+- As Image
+```
+docker pull docuseal/docuseal
+docker tag docuseal/docuseal registry.heroku.com/hr-docuseal/web
+docker push registry.heroku.com/hr-docuseal/web
+heroku container:release web
+```
+
+- With heroku.yml(Recommended)
+```
+docker pull docuseal/docuseal
+docker tag docuseal/docuseal registry.heroku.com/hr-docuseal/web
+docker push registry.heroku.com/hr-docuseal/web
+heroku container:release web
+```
+
+
 <h1 align="center" style="border-bottom: none">
   <div>
     <a href="https://www.docuseal.co">
